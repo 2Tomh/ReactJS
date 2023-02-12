@@ -7,7 +7,7 @@ const App = () => {
     const [isVisible, setIsVisible] = useState(true);
      return (
         <div >
-            <CustomModal open={isVisible}>
+            <CustomModal open={isVisible} close={()=>setIsVisible(false)}>
                  <div style={styles.divContainer} className="formContainer">
                     <Form/>
                 </div>
